@@ -56,5 +56,7 @@ object NetworkUtil {
         }.also {
             deferreds.forEach { it.cancel() }
         }
+
+        return false
     }
 }
